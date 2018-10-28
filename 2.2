@@ -1,0 +1,15 @@
+#include <stdlib.h>
+#include <locale.h> 
+#include <iostream> 
+using namespace std; 
+int main() 
+{ 
+setlocale(0, ""); 
+int farlong; 
+int iard; 
+cout<<"введите расстояние в фарлонгах "; 
+cin>> farlong;
+iard = farlong * 220; 
+cout<<"расстояние в ярдах равно: "<<iard; 
+return 0; 
+}
