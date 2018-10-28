@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+struct CandyBar {
+    char name[25];
+    double mass;
+    double calories;
+
+    void print() {
+        cout << name << "\n" << mass << "\n" << calories << endl;
+    }
+
+};
+
+int main() {
+    CandyBar snack[3] = {{"Mars", 2.1, 365},
+                         {"Zemlia", 2.3, 407},
+                         {"Upiter", 2.4, 340}};
+    for (int i = 0; i <= 2; i++)
+        snack[i].print();
+    return 0;
+}
