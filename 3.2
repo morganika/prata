@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+	setlocale(0, "rus");
+	int a,b,c,rostduim,imt;
+	float veskg;
+	double rostmetr;
+	cout<<"ваш рост равен .. футов";
+	cin>>a;
+	cout<<"ваш рост равен .. дюймов";
+	cin>>b;
+	cout<<"ваш вес в футах равен ..";
+	cin>>c;
+	rostduim = (a*12)+b;
+	rostmetr=rostduim*0.0254;
+	veskg=c/2.2;
+	pow(rostmetr,2);
+	imt=veskg/rostmetr;
+	cout<<"ваш имт равен: "<<imt;
+	system("pause");
+	return 0;
+}
+	
