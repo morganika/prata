@@ -1,0 +1,27 @@
+#include <iostream>
+#include <locale.h>
+using namespace std;
+
+struct pizza {
+    char name[20];
+    double d;
+    double mass;
+
+    void print() {
+        cout << name << "\n" << d << "\n" << mass << endl;
+    }
+
+};
+
+int main() {
+	setlocale(0, "");
+    pizza p;
+    cout << "Введите имя компании:";
+    cin.getline(p.name, 20);
+    cout << "Введите размер пиццы:";
+    cin >> p.d;
+    cout << "Введите массу пиццы:";
+    cin >> p.mass;
+    p.print();
+    return 0;
+}
