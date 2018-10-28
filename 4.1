@@ -1,0 +1,32 @@
+#include <iostream> 
+#include <string> 
+using namespace std; 
+int main() 
+{ 
+char namef [25], namel [25], grade; 
+int age; 
+cout<< "What is your first name? "; 
+cin.getline (namef, 25); 
+cout << "What is your last name?"; 
+cin.getline (namel, 25); 
+cout << "What letter grade do you deserve?"; 
+cin>>grade; 
+cout << "What is your age?"; 
+cin>>age; 
+cout<<"Name: "<<namel<<", "<<namef<<endl; 
+switch (grade) { 
+case 'A': 
+cout << "Grade: B \n"; 
+break; 
+case 'B': 
+cout << "Grade: C \n"; 
+break; 
+case 'C': 
+cout << "Grade: D \n"; 
+break; 
+default: 
+break; 
+} 
+cout<<"Age: "<<age; 
+return 0; 
+}
