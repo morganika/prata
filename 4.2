@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    struct CandyBar {
+        char maker [35];
+        float mass;
+        int cal;
+    };
+    CandyBar snack = {"Moncha Munch", 2.3, 350};
+    cout << snack.maker << ", "<< snack.mass << ", " << snack.cal << endl;
+}
